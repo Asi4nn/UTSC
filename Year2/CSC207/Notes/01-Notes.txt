@@ -1,0 +1,64 @@
+Week 1 Notes
+===========
+
+Fill in your answers based on the Week 1 material and submit to MarkUs by Monday 21 September 2020 for participation marks.
+
++ Intro to the Course
+
+1. What are three things I can do to make sure that I am not accused of cheating in this course?
+
+- Don't share answers
+- Rephrase answers found online or in lectures
+- When helping others, explain concepts rather giving answers
+
+2. How can I ask questions? (List at least three ways)
+
+- In lecture chat with the prof
+- On Piazza
+- With friends/study groups
+
+3. How can I attend/view lectures? 
+
+You are allowed to attend any of the Tuesday lectures regardless of your enrolment. The recordings of each lecture can be found after class, if you go to q.utoronto.ca → CSC207H1F → Bb Collaborate → “Recordings” in the app menu.
+
+4. What am I expected to do each week?
+
+Attend/watch lectures and doing weekly exercises
+
++ Intro to Design
+
+5. What does efficiency mean when we're talking about Object Oriented Design?
+
+Human efficiency, minimize the amount of work you need to do to complete a task
+
+6. Give preliminary definitions for "Object Oriented Design", "Efficient Design", “Abstraction”, "Encapsulation", “Inheritance”, “Polymorphism”, "Coupling", and "Cohesion".
+
+Object Oriented Design: Designing a program off a principle that involves "objects" interacting with each other
+Efficient Design: The idea of designing a program that is easy to update, maintain, and extend, ie human efficiency
+Abstraction: Generalizing a concept into its essential characteristics and methods (actions)
+Encapsulation: The hiding of raw code and only displaying the functionality to things outside the class
+Inheritance: The ability of classes to interite characteristics and methods from other classes
+Polymorphism: The ability for an object to refer to objects of a different type
+Coupling: How much a class is dependant on another
+Cohesion: How much the purpose of classes package together to operate a larger task
+
+7. "Low coupling and high cohesion" means:
+
+The classes do not affect or change each other much, but have lots of similar tasks that band together to operate a larger task
+
++ Intro to Java
+
+8. What is a "constructor", a "class variable", and a "method"?
+
+constructor: essentially the "init" method of classes in python, initiate the object and it's characteristics (class variables)
+class variable: variables specific to each instance of a class, bundled inside each object
+method: a "action", more specifially a function of a class, these belong to the class, not the objects themselves
+
+9. Give two differences between primitive and reference variables.
+
+Reference variables store the address of the actual value while primitive variables store the actual value
+Using the comparison operator (==) reference compares the address while primitive compares the actual data
+
+10. Which package is the String class in? You can find this information on the Oracle website when you search “String java”.
+
+java.lang

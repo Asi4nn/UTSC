@@ -1,0 +1,78 @@
+Week 10 Notes
+=============
+
++ Floating Point Storage
+
+1.  When storing floating point values, computers store the sign, the exponent, and the mantissa separately.
+
+(a) The sign
+-  What does it represent?
+The positivity (or negativity) of the number
+-  How is it stored?
+With 1 leading bit
+
+(b) The exponent
+-  What does it represent?
+Represents a number of the exponent + 128 (this allows for exponents from -127 to 128)
+-  How is it stored?
+8 bits representing a number from 0-255 that come after the sign bit
+
+(c) The mantissa
+-  What does it represent?
+The start of the number from the first non-zero number
+-  How is it stored?
+23 bits, dropping the leading 1, as the mantissa always starts with 1
+These are trailing bits in the 32 IEEE floating point number standard.
+
+2. What is proper rounding and how is it different from regular rounding?
+
+Round to the nearest even number when the decimal is .5
+
+3. Why do we use proper rounding?
+
+So the number of cases where you round up and down are equal
+
+4. Why does the computer sometimes print the wrong number, if you ask it to print too many digits?
+
+The datatypes that store numbers can only store numbers that are so big because of the finite number of bits it has
+
+5. In this question, we assume that you need your calculation to be as accurate as possible. 
+
+Why is it more accurate to add smaller numbers first, before adding much larger numbers? What goes wrong, if you add the larger numbers first?
+
+The larger numbers don't store as many digits in the mantissa, so when you add the smaller ones, some digits may get rounded off the end of the mantissa.
+
+6. What went wrong, when we used a floating point variable as the index in a loop? Why?
+
+The for loop essentially does arithmetic on each iteration, and that gives a high chance of inaccuracy because of the roundoff error.
+
+7. Why should we try to use fewer arithmetic operations?
+
+Because of the possible inaccuracies, you may not want to use them when high precision matters (Ex. Ariane 5 rocket).
+
++ Exam and Quiz
+
+8. When is the Quiz?
+
+Any time between 11 am on Friday 27 November and 11 pm on Monday 30 November. It will be timed. This means that you will have 1 hour to complete the quiz, starting whenever you first open it. The questions can be seen ahead of time by going to the Week 10 Activity and clicking the link.
+
+9. What does the Quiz cover?
+
+Clean Arch, SOLID, Design Patterns with focus on Observer and Dependancy Injection
+
+SOLID and design patterns
+
+10. When is the exam?
+
+The exam will be available on Quercus as a series of 6 quizzes with titles "Exam Part 1 of 6", "Exam Part 2 of 6", etc. It will be available from 9 am EDT on Wednesday 19 August 2020 until 9 am EDT on Thursday 20 August. You will be able to find details linked from the Week 10 Activity, at least two weeks in advance.
+
++ Interviewing
+
+11. Record any tips that you think will be useful to you in the future, when you apply for an internship or other jobs.
+
+Practice more coding problems on Leetcode and review important notes from courses like this
+
+12. During the lecture, we talked about creating separate, well-researched cover letters for few companies and also the possibility of using one generic letter that works for many different companies. Do you like the first strategy better or the second strategy or a mixture of the two? Why?
+
+For entry level jobs, I think balancing towards the quantity side helps for the less experienced people.
+

@@ -1,0 +1,76 @@
+Week 4 Notes
+============
+
+
++ From Last Week:
+
+1. Why do some classes have "E" or "T" as a generic type when they are defined, but not when they are used?
+
+For example, ArrayList<E> on the Oracle website looks like ArrayList<String> or ArrayList<Integer> when we call the constructor.
+
+It is a type that has to defined when someone uses the class. Ex. ArrayList's add(E) method casts the given object to type E to add to the list.
+
+2. How do we choose between using an abstract class and an interface?
+
+Subclasses of abstract classes will typically have a "is-a" relationship with their parent. Ex. Dog is a Animal, so Dog would be a subclass of an Animal class.
+An interface will typically implement a service to certain classes in the program. Ex. Students and Teachers are both People, but only students can enroll in courses. So Enrollable would be an interface.
+
++ Exceptions:
+
+3. What is the difference between a "checked" and an "unchecked" exception?
+
+Unchecked exceptions happens while the program is running, typically because of code errors.
+Checked exceptions happen while compling (the complier checks in advance), the program may handle the exception or specifies the exception using throw.
+
+4. What is a RuntimeException and why should they be unchecked?
+
+Because RuntimeExceptions means there is something wrong with the code which can be fixed internally.
+
+5. Why should the other subclasses of Exception be checked?
+
+Because you can recover from any exception, even if its not a RuntimeException. So the information from the subclasses will be more specific and can help the user.
+
+6. What is a try block? A catch block? When do we write them into the code?
+
+The code you want to check is put in the try block, and the catch block specifies the error to catch and what to do when the error occurs.
+
+7. When do we use the keyword "throw" and when do we use the keyword "throws"?
+
+throw: To throw specific subclasses of Exception.
+throws: Makes a exception checked when put in the signature of the exception constructor.
+
+8. Why not catch an Exception, instead of one of its subclasses? Why would this be a problem?
+
+Because then all the subclasses of Exception will also be checked, so the exception will not be specific and likely not helpful.
+
+9. What is the "e" that shows up in the parentheses after "catch"?
+
+e is the exception that is caught, put into a variable so you can access its methods.
+
+10. When would we want to use a finally block?
+
+The finally block will always run even if there are returns or exceptions thrown in the catch or try block.
+
++ SOLID principles of design
+
+11. What is a design principle? How is it different from a rule?
+Principles are goals to work towards, but not always possible to follow, and you need to choose what is important in any specific scenario.
+While rules are either followed or broken.
+
+12. Explain each of:
+
+  - Single Responsibility Principle: Every class should have a single responsibility.
+  If you need to change a responsibility of the program, you should only have to change one class. There shouldn't be a class that has multiple reasons to keep changing. 
+
+  - Open/Closed Principle
+  Not taught yet
+
+  - Liskov Substitution Principle
+  Not taught yet
+
+  - Interface Segregation Principle
+  Not taught yet
+
+  - Dependency Inversion Principle
+  Not taught yet
+

@@ -1,0 +1,97 @@
+Sample solutions to test 3
+==========================
+
+Q1: \delta*(q0,x) =
+ { q0 if V(x) mod 5 = 0;
+ { q1 if V(x) mod 5 = 1;
+ { q2 if V(x) mod 5 = 2;
+ { q3 if V(x) mod 5 = 3;
+ { q4 if V(x) mod 5 = 4.
+
+Q2-5: In general, \delta(q_j,t) = q_{(3j+t) mod 5}.
+
+Q6: (0+1+2)* 21
+ Explanation:
+ Since 9 = 3^2, taking modulo 9 of a number in base 3 can be easily done by
+ considering the 2 rightmost (base 3) digits.
+ Thus V(x) mod 9 = 7 is equivalent to x ends in 21 (which is 7 in base 3).
+
+Q7: As suggested in the test instructions, we use:
+ e for empty string symbol and E for empty set symbol.
+
+ a) E
+ b) E
+ c) E
+ d) e
+ e) S' + T'
+ f) (S T') + (S' T) + (S' T')
+ g) (S + S')* S' (S + S')*
+
+Q8a: BIG RESULT
+
+Q8b: As suggested in the test instructions, we use:
+ d for \delta and e for empty string symbol (\epsilon).
+
+ We construct an NFSA M_f = (Q_f,\Sigma,d_f,s_f,F_f) as follows.
+
+ 1) Start with two copies of M.  We'll call them M1 and M2.
+    Let Q_f = union of M1's Q and M2' Q (no need to add more states).
+ 2) Let s_f = M1's s.
+    I.e., the initial state of M_f is M1's initial state.
+ 3) Let F_f = M2's F.
+    I.e., the accepting states of M_f are M2's accepting states.
+ 4) All transitions from M1 and M2 are also F_f's transitions.
+ 5) Add the following transitions.
+    For any q,q' in Q, if d(q,7) = q', then
+    i) add an e-transition from M1's q to M2's q'.
+   ii) add an e-transition from M2's q to M2's q'.
+
+ Exercise: Justify the correctness of this construction.
+
+ Another exercies: This construction produces an NFSA that transitions from
+  M1 to M2 when the first 7 is deleted.
+  a) Modify this construction so that the NFSA transitions from M1 to M2
+     when the last 7 is deleted.
+  b) Modify this construction so that the NFSA transitions from M1 to M2
+     when any 7 is deleted.  This transition should occur at most once.
+
+Q9: As suggested in the test instructions, we use:
+ === for equivalence symbol.
+
+ a) P(n): R S^n === S^n R.
+    I.e., R S ... S === S ... S R.
+            ^^^^^^^     ^^^^^^^
+            n times     n times
+
+ b) Let R,S be arbitrary regular expressions.
+  Suppose RS === SR.
+   Applying part (a), we get R S* === S* R.
+   Applying part (a) again, with R replaced by S* and S replaced by R,
+    we get S* R* === R* S*.
+   By commutativity of ===, we can conclude R* S* === S* R*.
+  Therefore RS === SR implies R* S* === S* R*, as wanted.
+
+ c) No, the implication can be false.  Here is a counterexample.
+  Let R = 0+1, S = 0.
+  Then R* S* = (0+1)* 0* === (0+1)* === 0* (0+1)* = S* R*.
+  However, 10 is in L(RS), but 10 is not in L(SR).
+  So L(RS) != L(SR).  So by definition of ===, RS !=== SR.
+
+Q10: As suggested in the test instructions, we use:
+ e for empty string symbol.
+
+ (e+4+44) (3 (e+4+44))* 333 (e+4+44) (3 (e+4+44))*
+
+ Explanation:
+ Each of the first and fourth terms matches e and 4 and 44.
+ Each of the second and fifth terms matches the empty string, as well as
+  all strings that do not contain substring 444 and starts with 3.
+ The first and second terms combine to match all strings that do not
+  contain substring 444.
+ The fourth and fifth terms combine to match all strings that do not
+  contain substring 444.
+ The third term matches 333 and only 333.
+ Altogether, the regex matches all strings that contain substring 333,
+  preceded and followed by any string that does not contain substring 444,
+  which is exactly as wanted.
+

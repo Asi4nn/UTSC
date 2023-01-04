@@ -1,0 +1,17 @@
+T = new Tree
+dfs(v)
+    v.state = visited
+    v.start = time
+    T.add(vertex(v))
+    time += 1
+    for each neighbour w of v
+        if w.state == visited
+            # cycle
+            T.add(edge(v, w))
+            return T    # no need to further traverse after finding a cycle
+        else if w.state == not_visited
+            T.add(edge(v, w), vertex(w))
+            dfs(w)
+        v.finish = time
+        v.state = finished
+        time += 1

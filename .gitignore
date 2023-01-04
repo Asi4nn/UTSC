@@ -1,0 +1,12 @@
+__pycache__
+pyta
+*.iml
+vscode
+.idea
+.gradle
+.DS_Store
+*.db-journal
+*.jar
+.gitkeep
+venv
+*.mp4

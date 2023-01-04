@@ -1,0 +1,85 @@
+Week 11 Notes
+=============
+
+Note 1: You do not have to submit this file to MarkUs. This is for studying purposes only.
+
+Note 2: Instead of a 12th lecture, there will be office hours next week. All of the sessions will be recorded. However, you are encouraged to attend at least one of these sessions and ask questions, if you have any.
+
+Note 3: The details of the exam have been posted to the Exam Study Page, including general topics and format for each question.
+
++ Exam 
+
+The exam will be available from 11 am on Friday 18 December 2020 until 11 am on Saturday 19 December 2020 on Quercus as 6 Quizzes, called "Exam Part 1 of 6", ..., "Exam Part 6 of 6".
+
+1.  Which topics will be on the exam?
+
+2.  How can you ask questions, during the exam?
+
+Silent OH
+
+3.  What is your plan for studying for the exam?
+
+Go through all slides, concepts and relavent quizzes
+
++ Design Patterns
+
+4. What is the difference between the Factory Method Design Pattern and the Abstract Factory Pattern?
+
+5. What are three different ways that a Builder class can encapsulate the variables inside the object it is building?
+
++ SOLID
+
+6.  The Single Responsibility Principle can be stated two ways:
+
+(v1) Each class should have at most one reason to change.
+
+(v2) Each class should be responsible to at most one actor.
+
+How can you decide what is a single "source of change" or "actor"?
+
+7.  SRP and Clean Architecture: How is the definition of "actor" related to the "business rules" of the Use Case layer? What about the "business rules" of the Controller layer?
+
+8.  The Open/Closed principle states that code should be open for extension and closed for modification. What does this mean?
+
+9.  How can you use the following to make your program adhere more closely to the "Open/Closed" principle?
+
+(i) inheritance
+
+(ii) abstraction
+
+(iii) polymorphism
+
+(iv) encapsulation
+
+10.  Liskov Substitution Principle says that an instance of a subclass should be able to replace an instance of its parent class. How does this also help with the Open/Closed principle?
+
+11.  What are some things to look for, when trying to catch a Liskov violation?
+
+12.  The Interface Segregation Principle says that it is better to have multiple small interfaces, rather than one big one. Why?
+
+13.  When making interfaces smaller, by moving methods into multiple other interfaces, how do we know when we have made an interface that is too small?
+
+14.  The Dependency Inversion Principle says that more abstract classes should not depend on less abstract classes. What does this mean for Clean Architecture?
+
+15.  In the Dependency Inversion Principle, what does "more abstract" mean?
+
++ General Design
+
+16.  Which design patterns did we cover this semester? Which of them increase encapsulation?
+
+17.  Did you use any design patterns in your project? Which ones? Which classes did they involve?
+
+18.  Which of the classes in your project are Controllers? Presenters? Gateways? Use Cases? Entities?
+
++ Java
+
+19.  What is the Java memory model?
+
+20.  When a Java method returns an object, why is an alias of the original object sometimes created?
+
+21.  What are some situations when you want to override the default constructor?
+
++ General
+
+22.  Which do you think was the most important topic in this course?
+

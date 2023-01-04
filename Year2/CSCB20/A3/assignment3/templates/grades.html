@@ -1,0 +1,105 @@
+{% extends 'navbase.html' %}
+
+{% block title %}Grades{% endblock %}
+
+{% block content %}
+
+    <h3>Grades (press enter to submit marks):</h3>
+    <br>
+    {% if session['usertype'] == 'student' %}
+        <div class="table-4-col">
+            {% for header in headings %}
+                <span class="table-header">{{ header }}</span>
+            {% endfor %}
+
+
+            {% for row in data %}
+                {% for entry in row %}
+                    {% if entry != None %}
+                        <span>{{ entry }}</span>
+                    {% else %}
+                        <span>N/A</span>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            <span>
+                <form method="POST" onsubmit="return submitRemarkRequest(this)">
+                    <label for="A1">Reason:</label>
+                    <input type="text" id="A1" name="reason" rows="3" cols="6">
+                    <input type="submit" name="regrade-submit-A1" value="Submit regrade request" class="button">
+                    <input type="hidden" name="asn" value="a1_reason"/>
+                </form>
+            </span>
+            <span>
+                <form method="POST" onsubmit="return submitRemarkRequest(this)">
+                    <label for="A2">Reason:</label>
+                    <input type="text" id="A2" name="reason" rows="3" cols="6">
+                    <input type="submit" name="regrade-submit-A2" value="Submit regrade request" class="button">
+                    <input type="hidden" name="asn" value="a2_reason"/>
+                </form>
+            </span>
+            <span>
+                <form method="POST" onsubmit="return submitRemarkRequest(this)">
+                    <label for="A3">Reason:</label>
+                    <input type="text" id="A3" name="reason" rows="3" cols="6">
+                    <input type="submit" name="regrade-submit-A3" value="Submit regrade request" class="button">
+                    <input type="hidden" name="asn" value="a3_reason"/>
+                </form>
+            </span>
+            <span>
+                <form method="POST" onsubmit="return submitRemarkRequest(this)">
+                    <label for="final">Reason:</label>
+                    <input type="text" id="final" name="reason">
+                    <input type="submit" name="regrade-submit-F" value="Submit regrade request" class="button">
+                    <input type="hidden" name="asn" value="final_reason"/>
+                </form>
+            </span>
+        </div>
+
+    {% elif session['usertype'] == 'instructor' %}
+        <div class="table-10-col">
+            {% for header in headings %}
+                <span class="table-header">{{ header }}</span>
+            {% endfor %}
+
+            {% for row in data %}
+                {% for entry in row %}
+                    {% if loop.index0 > 1 and loop.index0 < 6 %}
+                        {% if entry != None %}
+                            <span>
+                                <form method="post" onsubmit="return validateGrade(this)">
+                                    <input class="mark-input" type="text" name="mark" value="{{ entry }}"/>
+                                    <input type="hidden" name="asn" value="{{ headings[loop.index0] }}"/>
+                                    <input type="hidden" name="student" value="{{ row[0] }}"/>
+                                </form>
+                            </span>
+                        {% else %}
+                            <span>
+                                <input type="number"/>
+                            </span>
+                        {% endif %}
+                    {% else %}
+                        {% if entry != None %}
+                            <span class="table-alert">{{ entry }}</span>
+                        {% else %}
+                            <span></span>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <script src="{{ url_for('static', filename='grades.js') }}"></script>
+
+{% endblock %}
+
+<p>The Marks for ABC whole student number is {{ num }} are:</p>
+<ul>
+    <li>Assignment 1 mark is: {{ A1 }}</li>
+    <li>Assignment 2 mark is: {{ A2 }}</li>
+    <li>Assignment 3 mark is: {{ A3 }}</li>
+    <li>Midterm Exam mark is: {{ Midterm }}</li>
+    <li>Final Exam mark is: {{ Final }}</li>
+</ul>

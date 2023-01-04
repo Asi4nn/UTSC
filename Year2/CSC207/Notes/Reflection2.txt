@@ -1,0 +1,19 @@
+1.
+- Large amounts of design planning
+- Signup classes
+- Event_system debugging and unit testing
+
+2. 
+Good teamwork, communication at critical times, meeting up to discuss.
+
+3.
+Better distribution of work, more concrete discussion of design
+
+4.
+Consistantly keep with updated posted, remember to pull every time you start working
+
+5. 
+Create more concrete designs rather than rely on things like CRC cards
+
+6. 
+Spend more time on the project, try to work out designs more rather than fixing later

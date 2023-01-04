@@ -1,0 +1,65 @@
+Week3 Notes
+===========
+
+
+
++ About the code:
+
+1. Why is the Student class missing a setter?
+
+You don't want to change the a student's number, as it's the primary identitfier of any individual student
+
+2. Why should the Person class not have an empty constructor? (no parameters, no body)
+
+The Person class has essential attributes (name and birthday), so we don't want to make a person object with these
+
+3. How does an instance of Student get and set the name variable?
+
+It uses the methods inherited from Person class
+
+4. What do @param and @return mean, when we put them in a Javadoc comment?
+
+@param: describes further restrictions on input parameters on methods
+@return: describes what the given method will return
+Both show up in the generated Javadoc
+
+5. What does the "javadoc fileName" command do?
+
+Creates a Javadoc website for a given file
+
+
++ Design and Style:
+
+6. (Design) When we made changes to the Person inheritance hierarchy, did we have to change the code in StudentManager? Does your answer to the previous question indicate "good design"? If so Why? If not, why not?
+
+No, because the only requirement for a student manager to enroll an object is for it to implement Enrollable. 
+
+7. (Style) What are the Java naming conventions that we have used so far?
+
+Camel case for instance and static variables, classnames, and methods
+Snake case for packages and constants
+
+8. (Design) What makes a class "abstract"? What makes a method "abstract"?
+
+The abstract keyboard when making a class, a abstract class cannot be made by itself, only childern classes.
+Abstract methods are also made by the abstract keyword.
+Any class with an abstract method must be an abstract class.
+
+9. What is an interface?
+
+Similar to an abstract class, however you cannot create instances of it, it must be implemented by classes.
+A list of methods that classes an implement so they must have the methods.
+
+10. (Design) What is an argument for making Student an abstract class?
+
+There are different types of students, and there may be different conditions a student may have to pass to be able to do certain actions.
+
+11. (Design) What is an argument for making an interface called Enrollable?
+
+Because some subclasses of person should be able to enroll while some may not. So instead of using inheritance, you can use the Enrollable
+interface to determine if it may be enrolled in courses.
+
+12. (Design) Why is the enrollAllInCourse method in StudentManager an example of using polymorphism? What is the alternative?
+
+It treats Student (or Enrollable) as a subclass or implementation, i.e. treating one object as multiple types.
+Otherwise you would have to check if the objects are types that can be enrolled.

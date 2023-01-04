@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+    <div class="form-wrapper">
+        <h2>Create Account</h2>
+        <form method="post">
+            <label for="username">Username</label>
+            <input name="username" id="username" required>
+
+            <label for="name">Full Name</label>
+            <input name="name" id="name" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+            <br>
+
+            Sign up as:
+            <label>
+                <input type="radio" id="student" name="usertype" value="student" required>
+                Student
+            </label>
+            <label>
+                <input type="radio" id="instructor" name="usertype" value="instructor">
+                Instructor
+            </label>
+
+            <input type="submit" value="Register" class="button">
+        </form>
+        {% if msg != None %}
+            <div class="alert">
+                {{ msg }}
+            </div>
+        {% endif %}
+        <a href="/">Already have an account?</a>
+    </div>
+
+{% endblock %}

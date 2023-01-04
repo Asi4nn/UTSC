@@ -1,0 +1,116 @@
+Week 9 Notes:
+============
+
++ Phase 2:
+
+1. Which extensions do you want to implement for Phase 2? (You can take this list to your next group meeting)
+
+GUI
+Maybe database
+
+
+2. What are some ways you can package your files? (See “Course At A Glance” → “Project Resources”)
+
+
++ MVP
+
+3. How is “Presenter” from MVP different from “Presenter” in Clean Architecture?
+
+Clean Architecture: Display information to the user based on the infomation they are given
+MVP: The connection between the frontend (the part that the user sees), and the backend.
+
+4. According to the Dependency Rule, classes in the Controller layer are not supposed to depend on classes in the GUI. What is an alternative way for Controllers/Presenters to interact with the GUI that avoids putting the main method in the GUI?
+
+Dependency inversion, by using interfaces to depend on.
+
++ Regex:
+
+5. What is a regular expression? (From last week)
+
+A expression that defines a set of strings.
+
+6. List three quantifiers. These are symbols that tell you how many times the String is expected to match part of a regular expression consecutively.
+
+*: 0 or more 
++: 1 or more
+?: zero or one
+
+7. What is the difference between matching the same pattern multiple times and repeating the same character multiple times? How do you do each? (Hint: It involves { } and \1 respectively.)
+
+Matching same: [a-c]{3}		selects 3 of the char in the brackets randomly, ex: abc, cba, aaa, bbb, ccc
+Repeating: (a-c)\1\1		takes the selected value from in the bracket and repeats the same one twice, ex: aaa, bbb, ccc
+
+8. Categorize the symbols we learned during lecture by entering them in the appropriate row:
+
+(a) Quantifiers:
+
+*
++
+?
+[]
+
+
+(b) Anchors:
+
+^
+$
+
+(c) Character Classes:
+
+.
+\D
+\d
+\s
+\S
+\w
+\W
+
+(d) Logical Operators and Complement of a set:
+
+| 
+&&
+[^]
+
+
+(e) Repetition Symbols:
+
+{}
+()
+
+9. What is the difference between repeating a substring and repeating a regex pattern? How do we do each?
+
+String: "\\" prints \
+Regex: "\\\\" prints \
+
+10. What does it mean for a regex to be "too restrictive" and "too permissive"?
+
+Permissive is a measure of how large the set that the regex matchs to, restrictive is the opposite.
+Restricted version of a regex  would be a subset of the original, and a more permissive version of a regex will be a superset of the original
+
+11. Write regular expressions that match the Strings that can be described by:
+
+(a) All postal codes in Toronto
+
+[A-Z]\d[A-Z] \d[A-Z]\d
+
+(b) Phone numbers of the form (xxx) xxx-xxxx
+
+\(\d{3}\) \d{3}-\d{4}
+
+(c) Numbers less than 1000 that contain only odd digits
+
+1[0-9]{3} | [1-9][0-9]{2} | [1-9][0-9] | [1-9]
+
+(d) All sentences of the form "Hello x. Goodbye x." where x can be replaced with any word.
+
+Hello .*\. Goodbye .*\.
+
+(e) All of the following honourifics: "Mx.", "Mr.", "Mrs.", and "Ms."
+
+M[xr(rs)s]\.
+
+
+12. In lecture, we went over how many ways to check if a String matches a regular expression? Explain two of them.
+
+Use a matcher object
+Use the matches method of String

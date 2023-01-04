@@ -1,0 +1,98 @@
+Week 8 Notes:
+=============
+
++ From Last Week:
+
+1. For each of the following design patterns, what part of the code gets
+encapsulated, when we implement the design pattern?
+
+- Iterator
+The collection of iterable objects and how to iterates through them
+- Observer
+The changes made from the cause and effect of the action
+- Strategy
+The strategy itself, (ex. an algo)
+- Dependency Injection
+The constructor used for the object
+- Factory Method
+Constructor calls for the objects being made
+- Abstract Factory
+Similar to factory, but with multiple possible factories
+- Facade
+The multiple responsibilities the class has
+- Builder
+The order/process that it takes to do an action (build something)
+- Adapter
+The adapted class is encapsulated
+
+
++ System Boundaries
+
+2. What is a System Boundary?
+
+Any point of input or output (ex. keyboard, mouse, database, textfile)
+
+3. What are 3 reasons why you might want to log information from your
+program?
+
+Keep track of data in the program
+Makes it easier to track issues that come up later
+See what order events are happening in the program
+
+4. What does a Logger do? What does a Handler do? Why do you need both?
+
+The Java Logger class provides basic logging functions (ie creates log messages)
+The Java Handler class recieves logs from Logger and displays them to the user using a file or console
+
+5. Which design pattern(s) do Loggers and Handlers implement?
+
+Observer, errors cause logs and affects how handlers behave
+
+6. What is the difference between "logging" and using a "Logger"?
+
+Logging is an action made by the combined efforts of a Logger and Handler, the Logger itself doesn't do all the logging, as the handler is the one that saves/prints out the logs created.
+
++ Teamwork
+
+7. In what ways is my project team working well together?
+
+Good planning, consistent meeting times, constant contribution
+
+8. What should change in order for my project team to improve how we work
+together?
+
+Better communication would help a lot as the design is getting changed as it goes.
+We really have to know what other systems require from the systems we are working on individually.
+
++ Regular Expressions
+
+9. What is a regular expression (regex)?
+
+Describes a a set of strings that match the expression
+
+10. What are the symbols we covered today and what do they mean?
+
+^ - beginning of the expression
+$ - end of the expression
+[] - square brackets represent a symbol chosen from symbols in the brackets
+* - concatenates the set of characters which it is applied to at least 0 times (can be applied to 1 char)
++ - concatenates the set of characters which it is applied to at least 1 time
+a? - chooses either a or '' (empty symbol)
+\s - set of space characters
+\t - tab characters
+\n - new line characters
+[^] - represents any symbol NOT in the brackets
+{low, high} - repeats the pattern that it is applied to between low and high times (inclusive), leaving a parameter empty means it is unbounded on that side
+{n} - repeats the pattern n times exactly
+
+Use \ in front of a symbol to use that symbol itself rather than its function (escape symbol, ex. using \. will give the period char rather than any char)
+
+Char classes:
+. - any char
+\d - any digit
+\D - any non-digit
+\s - any whitespace char
+\S - not \s
+\w - anything from a-z, A-Z, _, 0-9
+\W - not \w
+

@@ -1,0 +1,28 @@
+A:
+GUI design, creation and connection to the backend of the program, and debugging message system and GUI.
+
+B:
+Jan Garong: Helped with GUI connection to backend, helped a lot in the event system with debugging and adding the extra features
+Nancy Qiu, Lily (Xiaoli) Yang: Added new features to message system, helped in integrating the backend of message to GUI
+Lucia Luo: Created a lot of GUI, helped in designing GUI structure, debugging GUI
+Seyon Kuganesan: Helped integrate the new features of event system
+Helen (Zhiying) He: Helped integrate the new features of event system (there were a lot)
+Hassan Tariq: Lead the creation and connection of a SQL database to the program
+
+C:
+Quick responsive times to fix bugs that were found in relating systems
+Good coordination to get meetings to discuss critical design decisions
+
+D:
+Clear instructions laid for design, as I designed a lot of the GUI, what it looks like is heavily dependant on what the program wants to do
+
+E:
+Quick learner, so I could pick up JavaFX and start creating the GUI quickly
+Team leadership: Took charge and laid clear designs for the GUI for the others to follow
+
+F:
+Devote more time to getting to know teammates, free more time to work on the project overall (there were some features we wanted that we didn't have time to add)
+
+
+Sidenote:
+I realized I didn't hand in a Reflection1, I remembered that I thought they were just things to talk about in the TA meeting, I did discuss all the content of those questions in Reflection1 with the TA that week, is it possible to get that assignment waived?

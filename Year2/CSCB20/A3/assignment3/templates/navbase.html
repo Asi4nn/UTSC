@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='jQuery.js') }}"></script>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="syllabus">Syllabus</a>
+            </li>
+            <li>
+                <a href="lectures">Lectures</a>
+            </li>
+            <li>
+                <a href="labs">Labs</a>
+            </li>
+            <li>
+                <a href="assignments">Assignments</a>
+            </li>
+            <li>
+                <a href="exams">Exams</a>
+            </li>
+            <li>
+                <a href="grades">Grades</a>
+            </li>
+            <li>
+                <a href="feedback">Feedback</a>
+            </li>
+            <li>
+                <a href="calendar">Calendar</a>
+            </li>
+            <li>
+                <a href="resources">Resources</a>
+            </li>
+            <li>
+                <a href="logout">Logout</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="main">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>
+            Website created by Leo Wang, Aisha Abdul Rahiman, and Zhenhao Xu.
+        </p>
+        <a href="https://www.utsc.utoronto.ca/cms/faculty-of-computer-science">
+            Faculty of Computer Science
+        </a>
+    </footer>
+
+</body>
+</html>
+
