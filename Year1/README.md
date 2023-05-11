@@ -42,9 +42,9 @@ Arguably the hardest 1st year course, since it introduces formalized proofs for 
 ## CSCA48
 with Paco (Francisco Estrada)
 
-### Difficulty: 4
-### Usefulness: 5
-### Enjoyment: 3
+### Difficulty: 😰😰😰😰
+### Usefulness: 🔨🔨🔨🔨🔨
+### Enjoyment: 🥰🥰🥰
 
 Introduction to a broad scope of important CS topics like complexity, memory, linked lists, recursion, etc. All done in C, which is pretty unforgiving to code in. mostly difficult because of Paco's insane quizzes and tests.
 
@@ -55,9 +55,9 @@ Introduction to a broad scope of important CS topics like complexity, memory, li
 ## MATA22
 with Kaidi Ye
 
-### Difficulty: 2
-### Usefulness: 3
-### Enjoyment: 3
+### Difficulty: 😰😰
+### Usefulness: 🔨🔨🔨
+### Enjoyment: 🥰🥰🥰
 
 Lots of concepts and proofs from linear algebra, some from high school, a lot a new content. Also fairly important for upcoming courses depending on your choice of electives. Proofs pretty interesting, explanations could've been better tbh. Go to the review seminars if you want good test marks.
 
@@ -68,9 +68,9 @@ Lots of concepts and proofs from linear algebra, some from high school, a lot a 
 ## MATA37
 with Kathleen Smith
 
-### Difficulty: 4
-### Usefulness: 4
-### Enjoyment: 5
+### Difficulty: 😰😰😰
+### Usefulness: 🔨🔨🔨🔨
+### Enjoyment: 🥰🥰🥰🥰🥰
 
 Kathleen hands down the best prof I've had for any math course. Content is pretty heavy with the introduction of integrals, series, etc, but the HW will give you all the understanding you need.
 

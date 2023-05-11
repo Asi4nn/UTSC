@@ -5,6 +5,7 @@ A lot of repos probably don't have some work in it because either I didn't save 
 Only including courses relevant to CS, keep in mind I rate these courses based on my own experience and is pretty heavily affected by the order which I took them + my work terms.
 
 ## Courses I Took
+I've also rated the courses out of 5 in terms of difficulty, usefulness, and enjoyment.
 
 ### Year 1
 - Intro to Computer Science I
