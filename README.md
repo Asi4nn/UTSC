@@ -37,6 +37,9 @@ Only including courses relevant to CS, keep in mind I rate these courses based o
 - Techniques of the Calculus of Several Variables II
 
 ## Tips for Prospective Students
+You may have stumbled on this repo as a student getting ready for some course I've taken in the past, or maybe getting ready for university in general so these are the only things (in my opinion) you need to succeed academically.
+
+This comes from someone who doesn't like to work too hard and has put in just the work necessary to be satisfactory to my own standards (current cGPA: `3.87/4`).
 
 1. **Always go to lecture:** This is obvious, but sometimes overlooked because of the demand for recorded lectures. Not only will you get the information sooner if you go in-person, but more importantly it reduces distraction from taking notes, which is almost always better than just paying attention. This greatly improves memory retention of the material and you will develop a note taking style which helps you remember the most important concepts better. 
 *Note that there may be few exceptions, like if you already know the course material really well, or some rare courses which the lectures and tutorials are not actually very useful (examples could be CSCB20 and Ilir's CSCC01)*
@@ -45,4 +48,4 @@ Only including courses relevant to CS, keep in mind I rate these courses based o
    
 3. **Understand before moving on:** An often overlooked fact in any math based learning which build upon previous knowledge. I would say nearly all math, even starting from basic arithmetic builds onto itself, and if your foundation is weak, you won't have a good time (especially in uni). So always ask your prof, TAs, friends, or whoever about any lecture/tutorial material you don't quite understand, but don't get too hung up on small details that may not be as important because semesters fly by real quick.
 
-4. **Review material often:** If you really want to maximize grades and learning potential, you have to do this. I will say that reviewing material optimally takes a lot of time and you might want to do other things (play games, go out, idk). Regardless, it's not hard to see that constantly going back to material helps immensely for depositing into long term memory, and will 100% aid you in remember definitions, proofs, etc. and why they exist. The nature of some courses already do this, as the material builds upon itself and you need to use many concepts regularly (examples are CSCB36, MATA31, CSCC63, MATB24).
+4. **Review material often:** If you really want to maximize grades and learning potential, some courses will demand this. I will say that reviewing material optimally takes a lot of time and you might want to do other things (play games, go out, idk). Regardless, it's not hard to see that constantly going back to material helps immensely for depositing into long term memory, and will 100% aid you in remembering definitions, proofs, etc. and why they exist. The nature of some courses already do this, as the material builds upon itself and you need to use many concepts regularly (examples are CSCB36, MATA31, CSCC63, MATB24).
