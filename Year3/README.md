@@ -1,4 +1,4 @@
-# Year 3 (Fall 2022 - Winter 2022)
+# Year 3 (Fall 2022 - Winter 2023)
 
 ## CSCC63
 with Nick Cheng

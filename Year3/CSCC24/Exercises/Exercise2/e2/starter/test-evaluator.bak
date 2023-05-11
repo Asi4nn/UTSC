@@ -1,0 +1,44 @@
+#lang racket
+
+(require rackunit)
+(require rackunit/text-ui)
+(require "evaluator.rkt")
+
+(define-test-suite evaluator-test-suite
+  
+  (test-equal? 
+   "evaluate"
+   (evaluate '(a and (b or c))
+             '((a . #t) (b . #f) (c . #t)))
+   #t)
+
+  (test-equal? 
+   "evaluate"
+   (evaluate '((a and (not b)) or ((a and c) or ((not b) and c)))
+             '((a . #t) (b . #f) (c . #f) (d . #t)))
+   #t)
+  )
+
+(define-test-suite simplifier-test-suite
+  
+  (test-equal? 
+   "simplify"
+   (simplify '(a and (b or c))
+             '((a . #t) (b . #f) (c . #t)))
+   #t)
+
+  (test-equal? 
+   "simplify"
+   (simplify '(a and (b or c))
+             '((b . #f) (c . #t)))
+   'a)
+
+  (test-equal? 
+   "simplify"
+   (simplify '((a and (not b)) or ((a and c) or ((not b) and c)))
+             '((a . #t) (c . #f) (d . #t)))
+   '(not b))
+  )
+
+(display (run-tests evaluator-test-suite))
+;;; (display (run-tests simplifier-test-suite))

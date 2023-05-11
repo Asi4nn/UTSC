@@ -1,0 +1,19 @@
+Racket: This choice was motivated mostly by the great recursive structure and case statements which makes handling the propositional logic statements easier,
+along with good support for list manipulation since the logic operators would likely need to be represented in a list in a tree-like structure.
+It would've been a lot harder if valid input was not an assumption, but since it was a lot of code from e2 could be reused to great effect.
+
+The aspects I implemented was the following:
+- `formula` predicate, almost nearly the same syntax barring the "variable" identifier, just setting any literal be a variable.
+- `sub` predicate, specifically the result of a given variable substitution into a valid formula
+- `eval` predicate, specifically the result of a given variable assignment into a valid formula
+
+The more special features of prolog have been omitted such as finding possible variable substitutions to valid formulae given an evaluation/substitution since
+this requires recursive backtracking, generally any support for fully generating answers to quantification is limited (it would be much, much more complex)
+
+Haskell: This choice is similar to Racket, Haskell has good support for custom data types and has exceptional pattern matching.
+
+- `formula` predicate was implemented as a datatype
+- `sub` predicate, specifically the result of a given variable substitution into a valid formula
+- `eval` predicate, specifically the result of a given variable assignment into a valid formula
+
+Reasons for other special cases of prolog being omitted is for the same reasons as Racket (it's really hard)
