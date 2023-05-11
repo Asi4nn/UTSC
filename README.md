@@ -31,7 +31,10 @@ Only including courses relevant to CS, keep in mind I rate these courses based o
 - Introduction to Numerical Algorithms for Computational Mathematics
 - Computability and Computational Complexity
 - Computer and Network Security
-
+- Design and Analysis of Algorithms
+- Engineering Large Software Systems
+- Principles of Programming Languages
+- Techniques of the Calculus of Several Variables II
 
 ## Tips for Prospective Students
 

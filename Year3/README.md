@@ -51,3 +51,47 @@ with Purva Gawde & Rawad Abou Assi
 Not much to say about databases, it's obviously pretty useful stuff, mostly the sql part, tho pretty boring imo. Not really sure if relational algebra or normal forms will ever come in use. Purva does group assignments, usually kinda scuffed but should be fine if you do it early and check for errors on piazza.
 
 ### Overall B tier course
+
+## CSCC73
+with Anna Bretscher
+
+### Difficulty: 3
+### Usefulness: 4
+### Enjoyment: 4
+
+Fun course which teaches the basis of algorithmic problem solving with a focus in dynamic programming, but also some other interesting algorithms like network flow, divide and conquer, and greedy. Assignments and tutorials feel sufficient to keep up with the material, the tests felt fair.
+
+### Overall A tier course
+
+## CSCD01
+with Rawad Abou Assi
+
+### Difficulty: 2
+### Usefulness: 1
+### Enjoyment: 1
+
+Teaches more or less the same things as CSCB07, CSCC01 and anything similar, with maybe a little extra content on top. The "project" doesn't really show you anything or guide you to be a better open source contributor, tests were wholly unnecessary since we have learned design patterns and such many times in previous courses (which are also prerequisites btw).
+
+### Overall F tier course
+
+## CSCC24
+with Anya Tafliovich
+
+### Difficulty: 3
+### Usefulness: 2
+### Enjoyment: 3
+
+Lots of programming languages in Anya's version of this course. Racket and Haskell are cool since you learn functional programming concepts, but adding in python, java, and prolog (this one especially feels out of place) just makes some assignments really monotonous. The tests were mostly writing code on paper, solving some simple problems.
+
+### Overall B tier course
+
+## MATB42
+with Parker Glynn-Adey
+
+### Difficulty: 5
+### Usefulness: 3
+### Enjoyment: 3
+
+The amount of content in this course is INSANE, it's really an extension to all the content learned in MATB41, so all the knowledge from that course will be required (no surprise there). Many concepts are simple to grasp in a vacuum but put a few theorems and lemmas together in a question and you'll need to read your notes again. Only way to learn this course is to practice a lot, I really only took it as a prereq for higher level CS courses.
+
+### Overall C tier course
