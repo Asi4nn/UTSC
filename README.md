@@ -37,8 +37,13 @@ I've also rated the courses out of 5 in terms of difficulty, usefulness, and enj
 - Principles of Programming Languages
 - Techniques of the Calculus of Several Variables II
 
+### Year 4
+- Human-Computer Interaction
+- Operating Systems
+- Social Impact of Information Technology
+
 ## Tips for Prospective Students
-You may have stumbled on this repo as a student getting ready for some course I've taken in the past, or maybe getting ready for university in general so these are the only things (in my opinion) you need to succeed academically.
+You may have stumbled on this repo as a student getting ready for some course I've taken in the past, or maybe getting ready for university in general, so these are the only things (in my opinion) you need to succeed academically.
 
 This comes from someone who doesn't like to work too hard and has put in just the work necessary to be satisfactory to my own standards (current cGPA: `3.87/4`).
 
